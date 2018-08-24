@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <person.wxy.form.FieldView
+        android:id="@+id/mFieldView3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:comm_contentType="TYPE_TEXTVIEW"
+        app:comm_edittext_hint=" 请选择"
+        app:comm_label_name="人脸识别"
+        app:comm_valueTextColor="@color/colorAccent"
+        app:comm_showMustInput="true"
+        app:comm_init_content="测试"
+        app:comm_must="false"
+
+        app:comm_labelWithMustIcon="true"
+        app:comm_warnMessager="请输入fieldView3"/>
+    <person.wxy.form.FieldView
+        android:id="@+id/mFieldView4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:comm_contentType="TYPE_EDITTEXT"
+        app:comm_edittext_hint=" 请选择"
+        app:comm_label_name="人脸识别"
+        app:comm_valueTextColor="@color/colorAccent"
+        app:comm_showMustInput="true"
+        app:comm_init_content="测试"
+        app:comm_must="false"
+        app:comm_labelWithMustIcon="true"
+        app:comm_warnMessager="请输入fieldView3"/>
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <person.wxy.form.FieldView
+            android:id="@+id/mFieldView3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:comm_contentType="TYPE_TEXTVIEW"
+            app:comm_edittext_hint=" 请选择"
+            app:comm_label_name="人脸识别"
+            app:comm_valueTextColor="@color/colorAccent"
+            app:comm_showMustInput="true"
+            app:comm_init_content="测试"
+            app:comm_must="false"
+            app:comm_dividedColor="@color/colorAccent"
+            app:comm_fieldDivided="false"
+            app:comm_formDivided="false"
+            app:comm_labelWithMustIcon="false"
+            app:comm_warnMessager="请输入fieldView3"/>
+        <person.wxy.form.FieldView
+            android:id="@+id/mFieldView4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:comm_contentType="TYPE_TEXTVIEW"
+            app:comm_edittext_hint=" 请选择"
+            app:comm_label_name="人脸识别"
+            app:comm_valueTextColor="@color/colorAccent"
+            app:comm_showMustInput="true"
+            app:comm_init_content="测试2"
+            app:comm_must="true"
+            app:comm_dividedColor="@color/colorAccent"
+            app:comm_fieldDivided="false"
+            app:comm_formDivided="false"
+            app:comm_labelWithMustIcon="false"
+            app:comm_warnMessager="请输入fieldView4"/>
+    </RelativeLayout>
+    <person.wxy.form.FieldView
+        android:id="@+id/mFieldView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:comm_contentType="TYPE_EDITTEXT"
+        app:comm_edittext_hint="请选择"
+        app:comm_label_name="人脸识别"
+        app:comm_labelTextColor="@color/colorPrimaryDark"
+        app:comm_valueTextColor="@color/colorAccent"
+        app:comm_showMustInput="true"
+        app:comm_init_content="测试3"
+        app:comm_must="false"
+        app:comm_textIcon="@mipmap/ic_launcher"
+        app:comm_warnMessager="FieldView1"/>
+
+    <person.wxy.form.FieldView
+        android:id="@+id/mFieldView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:comm_contentType="TYPE_TEXTVIEW"
+        app:comm_edittext_hint=" 请选择"
+        app:comm_label_name="人脸识别"
+        app:comm_valueTextColor="@color/colorAccent"
+        app:comm_showMustInput="true"
+
+        app:comm_must="true"
+        app:comm_dividedColor="@color/colorAccent"
+        app:comm_fieldDivided="false"
+        app:comm_formDivided="false"
+        app:comm_labelWithMustIcon="false"
+        app:comm_warnMessager="FieldView2"/>
+    <person.wxy.form.FieldView
+        android:id="@+id/mRadioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:comm_contentType="TYPE_RADIOGROUP"
+        app:comm_field_name="sex"
+        app:comm_init_content="男_1,女_2,未知_3,check_2"
+        app:comm_label_name="性别:"
+        app:comm_must="true"/>-->
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/mButton"
+        android:text="提交"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
