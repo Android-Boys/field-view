@@ -32,6 +32,7 @@ public class FieldView extends FrameLayout {
     public static final int TYPE_RADIOGROUP = 3;
     public static final int TYPE_SPINNER = 4;
     public static final int TYPE_HIDDENVIEW = 5;
+    private ImageView img_icon;
 
     static Context context;
 
@@ -108,7 +109,7 @@ public class FieldView extends FrameLayout {
 
         LinearLayout ll_container = fieldView.findViewById( R.id.ll_container);
         View line_half = fieldView.findViewById( R.id.line_half);
-        ImageView img_icon = fieldView.findViewById( R.id.img_icon);
+        img_icon = fieldView.findViewById( R.id.img_icon);
         ImageView img_must = fieldView.findViewById( R.id.img_must);
         View line_field = fieldView.findViewById(  R.id.line_field);
         View line_form = fieldView.findViewById( R.id.line_form);
@@ -117,6 +118,8 @@ public class FieldView extends FrameLayout {
         //root背景
         ll_field.setBackgroundResource(builder.fieldViewBgColor);
         ll_container.setBackgroundResource(builder.valueBgColor);
+
+
 
         //label
         tv_label = new AppCompatTextView(context);
@@ -532,6 +535,16 @@ public class FieldView extends FrameLayout {
             v.setCompoundDrawables(null, null, null, drawable);
         } else {
             v.setCompoundDrawables(null, null, null, null);
+        }
+    }
+
+    /**
+     * 设置右边小图标的点击事件
+     * @param imgIconClick
+     */
+    public void setImgIconClick(OnClickListener imgIconClick){
+        if (img_icon!=null){
+            img_icon.setOnClickListener(imgIconClick);
         }
     }
 }
