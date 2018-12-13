@@ -34,9 +34,9 @@ public class FieldView extends FrameLayout {
     public static final int TYPE_HIDDENVIEW = 5;
     private ImageView img_icon;
 
-    static Context context;
+    private  Context context;
 
-    Builder builder;
+    private Builder builder;
     private AppCompatTextView tv_label;
     private View fieldView;
 
@@ -311,7 +311,7 @@ public class FieldView extends FrameLayout {
 
     }
 
-    public  static int sp2px(final float spValue) {
+    public   int sp2px(final float spValue) {
         final float fontScale =context.getResources().getDisplayMetrics().scaledDensity;
         return (int) (spValue * fontScale + 0.5f);
     }
@@ -319,13 +319,13 @@ public class FieldView extends FrameLayout {
         private int fieldViewBgColor = R.color.comm_white;
         private CharSequence labelName;
         private int labelTextColor = R.color.comm_black;
-        private int labelTextSize =  sp2px(14);
+        private int labelTextSize = 28;
         private int labelBgColor = android.R.color.transparent;
         private int labelWidth = -1;
         private boolean labelWithMustIcon = false;
         private View dataView;
         private int valueViewType = -1;
-        private int valueTextSize = sp2px(14);
+        private int valueTextSize = 28;
         private String warnMessager;
         private boolean mustInput = false;
         private boolean showMustInput = true;
