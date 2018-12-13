@@ -2,7 +2,6 @@ package person.wxy.form;
 
 import android.content.Context;
 import android.support.v7.widget.AppCompatEditText;
-import android.text.TextUtils;
 import android.util.AttributeSet;
 
 
@@ -15,8 +14,6 @@ public class FieldEditText extends AppCompatEditText implements IFormField {
     public FieldEditText(FieldView.Builder builder, Context context) {
         super(context);
         FormInitUtil.initEditText(this, builder);
-        setSingleLine(true);
-         setEllipsize(TextUtils.TruncateAt.END);
         this.setPadding(10,0,0,0);
     }
 

@@ -154,7 +154,6 @@ public class FieldView extends FrameLayout {
         //icon
         if (builder.textIcon != -1) {
             img_icon.setVisibility(VISIBLE);
-
             img_icon.setImageResource(builder.textIcon);
         }
 
